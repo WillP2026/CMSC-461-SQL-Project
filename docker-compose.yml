@@ -1,0 +1,28 @@
+services:
+
+  postgres:
+    image: postgres
+    restart: always
+    shm_size: 128mb
+    ports:
+      - 5040:5432
+    volumes:
+      - postgres_volume:/var/lib/postgresql
+      - ./smoke_test.sql:/smoke_test.sql:ro
+    environment:
+      POSTGRES_USER: pgAdmin
+      POSTGRES_PASSWORD: pgAdmin
+      POSTGRES_DB: postgres
+
+  pgAdmin:
+    image: dpage/pgadmin4
+    ports:
+      - 5050:80
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "pgAdmin@pgAdmin.pgAdmin"
+      PGADMIN_DEFAULT_PASSWORD: "pgAdmin"
+    depends_on:
+      - postgres
+
+volumes:
+  postgres_volume:
