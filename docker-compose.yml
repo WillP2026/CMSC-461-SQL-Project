@@ -9,6 +9,10 @@ services:
     volumes:
       - postgres_volume:/var/lib/postgresql
       - ./smoke_test.sql:/smoke_test.sql:ro
+      - ./createDDL.sql:/createDDL.sql:ro
+      - ./loadAll.sql:/loadAll.sql:ro
+      - ./dropDDL.sql:/dropDDL.sql:ro
+
     environment:
       POSTGRES_USER: pgAdmin
       POSTGRES_PASSWORD: pgAdmin
