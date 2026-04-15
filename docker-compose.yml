@@ -12,6 +12,9 @@ services:
       - ./createDDL.sql:/createDDL.sql:ro
       - ./loadAll.sql:/loadAll.sql:ro
       - ./dropDDL.sql:/dropDDL.sql:ro
+      - ./queryAll.sql:/queryAll.sql:ro
+      - ./indexAll.sql:/indexAll.sql:ro
+
 
     environment:
       POSTGRES_USER: pgAdmin
