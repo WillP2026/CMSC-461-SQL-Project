@@ -14,7 +14,9 @@ services:
       - ./dropDDL.sql:/dropDDL.sql:ro
       - ./queryAll.sql:/queryAll.sql:ro
       - ./indexAll.sql:/indexAll.sql:ro
-
+      - ./createMethods.sql:/createMethods.sql:ro
+      - ./dropMethods.sql:/dropMethods.sql:ro
+      - ./transactions.sql:/transactions.sql:ro
 
     environment:
       POSTGRES_USER: pgAdmin

@@ -1,0 +1,4 @@
+DROP PROCEDURE IF EXISTS  give_tickets();
+DROP TRIGGER IF EXISTS watch_spot on sensorEvents;
+DROP FUNCTION IF EXISTS give_permit(INT,INT,INT,INT,DATE,DATE);
+DROP FUNCTION IF EXISTS update_spot();
