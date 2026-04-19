@@ -88,9 +88,8 @@ Executable commands in order (without parentheses)
 <li>python3 useDB.py -d postgres -u pgAdmin  -fc 3 (loadAll.sql)</li>
 <li>python3 useDB.py -d postgres -u pgAdmin  -fc 4 (indexAll.sql)</li>
 <li>python3 useDB.py -d postgres -u pgAdmin  -fc 5 (queryAll.sql)</li>
-<li>python3 useDB.py -d postgres -u pgAdmin  -fc 6 (transaction.sql)</li>
-<li>python3 useDB.py -d postgres -u pgAdmin  -fc 7 (dropMethods.sql)</li>
-<li>python3 useDB.py -d postgres -u pgAdmin  -fc 8 (dropDDL.sql)</li>
+<li>python3 useDB.py -d postgres -u pgAdmin  -fc 6 (dropMethods.sql)</li>
+<li>python3 useDB.py -d postgres -u pgAdmin  -fc 7 (dropDDL.sql)</li>
 </ul>
 </div>
 

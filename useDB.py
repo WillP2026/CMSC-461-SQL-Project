@@ -68,17 +68,11 @@ def main():
         )
       case 6: 
         execute_sql_file(
-          'transactions.sql',
-          dbname,
-          username,
-        )
-      case 7: 
-        execute_sql_file(
           'dropMethods.sql',
           dbname,
           username,
         )
-      case 8: 
+      case 7: 
         execute_sql_file(
           'dropDDL.sql',
           dbname,
