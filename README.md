@@ -103,3 +103,36 @@ To adjust parameters change them within the file.
 This is suppose to replicate a short view of what an admin should see when they work alongside this database.
 
 CMD - python3 actions.py
+
+
+<h3>Running GUI</h3>
+create a Virtual environment
+
+python -m venv .venv 
+<br>
+<br>
+Depending on OS use the following command<br>
+(mac or linux) - source .venv/bin/activate
+(windows) - .venv\Scripts\activate
+
+Then download the requirements after entering your venv
+
+pip install -r requirements.txt
+
+Before starting the program make sure to start the docker server and load your data using createDDL.sql and loadAll.sql.
+
+To start the GUI run - 
+python gui.py
+
+Here are the list of availible users by username and password
+
+             'John Doe': 'john123',
+             'Ben Doe': 'ben123',
+             'May Doe': 'may123',
+            'Peter Doe': 'peter123',
+            'Frank Doe': 'frank123',
+            'Owen Doe': 'owen123',
+            'Nate Doe': 'nate123',
+            'Josh Doe': 'josh123',
+            'Emily Doe': 'emily123',
+            'Tish Doe': 'tish123'
